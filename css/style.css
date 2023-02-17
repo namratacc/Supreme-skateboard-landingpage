@@ -1,0 +1,152 @@
+/* universal */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+}
+
+/* Hero*/
+
+.hero {
+  height: 75vh;
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__text {
+  background-color: rgba(#525252, 0.8);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  line-height: 6rem;
+  margin-left: 5rem;
+  gap: 3rem;
+  position: relative;
+}
+.hero__heading {
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 400;
+}
+.hero__btn {
+  align-self: center;
+  margin-right: 5rem;
+}
+
+/* Banner */
+
+.banner {
+  background-color: #01a4ff;
+  display: flex;
+  justify-content: center;
+}
+.banner__text {
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 5rem;
+}
+
+/* Testimonial */
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+  background-color: #525252;
+}
+.testimonial__user-img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.testimonial__text {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  width: 70%;
+}
+.testimonial__user-name {
+  font-size: 2rem;
+}
+
+/* Images */
+
+.images {
+  display: flex;
+}
+.images__product {
+  width: 33.33%;
+}
+
+/* cta */
+
+.cta {
+  background-color: #ffc702;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .cta__btn:link,
+.cta__btn:visited {
+  background-color: #01a4ff;
+} */
+
+/* button */
+.btn,
+.btn:link,
+.btn:visited {
+  /* display: inline-block; */
+  border: none;
+  cursor: pointer;
+  padding: 1.6rem 3.2rem;
+  background-color: #01a4ff;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover,
+.btn:active {
+  color: #01a4ff;
+  background-color: #fff;
+  outline: 2px solid #01a4ff;
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+
+  .banner__text {
+    font-size: 2rem;
+    line-height: 1.6;
+  }
+
+  .hero__heading {
+    font-size: 4.5rem;
+  }
+}
